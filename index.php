@@ -1,17 +1,42 @@
 <?php 
-    include 'header.php'
+include 'header.php';
+
+
+    $_SESSION["id"] =[
+        "nom" => "miann",
+        "tempsdeprepa" => "30 min",
+        "tempsdecuisson" => "15",
+        "niveaudedifficulte" => "Moyen",
+        "nombredepersonnes" => "4 personnnes",
+        ];
+
+var_dump($_SESSION);
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<style> .card { height:200px; width: 80%;
+margin: auto;
+}</style>
 
-    <title>Document</title>
-</head>
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
-</html>
+
+    <h2>3 Idées de recettes.</h2>
+
+    <?php foreach($_SESSION as $key => $value ){ ?>
+
+        
+    <div class="card text-bg-dark">
+        <!-- <img src="..." class="card-img"> -->
+    <div class="card-img-overlay">
+        <h5 class="card-title"><?=$value['nom']?></h5>
+        <p class="card-text"><?= $value['tempsdeprepa']?></p>
+        <p class="card-text"><?= $value['niveaudedifficulte']?></p>
+        <!-- <p class="card-text"><small>Last updated 3 mins ago</small></p> -->
+    </div>
+    </div>
+
+
+
+<?php }?>
+
+<?php 
+include 'footer.php';
+?>

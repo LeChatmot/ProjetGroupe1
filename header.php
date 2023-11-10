@@ -1,7 +1,6 @@
-<?php 
-    session_start();
+<?php
+session_start();
 
-    $_SESSION['listeIngredients']=[];
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +27,7 @@
           <a class="nav-link" href="">Ajout Recette</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="page-ajout-ingredients.php">Ajout ingredient</a>
+          <a class="nav-link" href="">Ajout ingredient</a>
         </li>
       </ul>
     </div>
