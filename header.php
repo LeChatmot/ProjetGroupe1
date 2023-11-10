@@ -1,4 +1,8 @@
-<?php ?>
+<?php 
+    session_start();
+
+    $_SESSION['listeIngredients']=[];
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
