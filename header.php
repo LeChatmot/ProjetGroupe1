@@ -28,7 +28,7 @@
           <a class="nav-link" href="">Ajout Recette</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">Ajout ingredient</a>
+          <a class="nav-link" href="page-ajout-ingredients.php">Ajout ingredient</a>
         </li>
       </ul>
     </div>
