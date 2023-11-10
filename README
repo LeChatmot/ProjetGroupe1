@@ -1,1 +1,21 @@
 groupe1
+
+info recettes:
+	id
+	nom
+	temps de preparation
+	temps de cuisson
+	niveau de difficulté
+	nombre de personnes
+	ingredients/quantité
+
+info aliments:
+	id
+	nom
+	nature
+	saison
+
+SESSION = [
+	["listeRecettes"]=[info recettes],
+	["listeAliment"]=[info aliments]
+]
