@@ -31,24 +31,22 @@ include 'header.php';
     </div>
 
     <div class="mb-3">
-        <label for="ingredient" class="form-label" id= "ingredients"><b>Les ingrédients</b></label>
-        <select name="ingredient" id="ingredient">
-        <?php 
-           foreach($_SESSION['listeIngredients'] as $key => $value){ ?>
-            <option value="<?=$value['name']?>"> <?=$value['name']?></option>
-            <?php}
-        ?>
-        </select>
-
-
-
-
-
-
-    <div class="mb-3">
         <label for="quantity" class="form-label">Nombre d'ingrédients</label>
         <input type="number" class="form-control" name="quantity" id="quantity" min="1" max="100" step="1">
     </div>
+    
+    <div class="mb-3">
+        <label for="ingredient" class="form-label" id= "ingredients"><b>Les ingrédients</b></label>
+        <select name="ingredient" id="ingredient" placeholder="choisir un ingredient">
+        <?php 
+           foreach($_SESSION['listeIngredients'] as $key => $value){
+            echo"
+                <option value="+$value['name']+"> "+$value['name']+"</option>";
+            };
+        ?>
+        </select>
+        </div>
+
     <button type="submit" class="btn btn-primary">Ajouter la recette</button>
 </form>
 

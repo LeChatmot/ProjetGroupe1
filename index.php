@@ -1,16 +1,5 @@
 <?php 
-include 'header.php';
-
-
-    $_SESSION["id"] =[
-        "nom" => "miann",
-        "tempsdeprepa" => "30 min",
-        "tempsdecuisson" => "15",
-        "niveaudedifficulte" => "Moyen",
-        "nombredepersonnes" => "4 personnnes",
-        ];
-
-var_dump($_SESSION);
+    include 'header.php';
 ?>
 
 <style> .card { height:200px; width: 80%;
